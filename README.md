@@ -1,6 +1,6 @@
 # Cireson Advanced Portal Search
 
-This repo contains an example of a search extension for the cireson portal.
+This repo contains an example of a search extension for the cireson portal http://cireson.com/cireson-platform.
 
 ## How to use
 
