@@ -18,7 +18,7 @@
 				var dataSource = customSearchLib.initDataSource(strProjection,this.initCriteria);
 
 				// Set Template for list items
-				var template = '<div class="k-item k-widget k-state-default "><span class="k-item"><h1><b>Asset ID: </b>#: data.HardwareAssetID #</h1></br><b>Name:</b> #: data.Name # </br><b>Serial:</b> #: data.SerialNumber # </br><b>UUID: </b> #: data.UUID # </br></div>';
+				var template = '<div class="k-item k-widget k-state-default "><span class="k-item"><h1><b>Asset ID: </b>#: data.HardwareAssetID #</h1></br><b>Name:</b> #: data.Name # </br><b>Serial:</b> #: data.SerialNumber # </br></div>';
 
 				// enableCustomSearch
 				customSearchLib.enableCustomSearch(searchInput, template, this.onSelect, dataSource) ;
@@ -82,18 +82,7 @@
 																				"Value": "%" + options.filter.filters[0].value + "%"
 																			}
 																		}
-																	},
-																	{
-																		"SimpleExpression": {
-																			"ValueExpressionLeft": {
-																				"Property": "$Context/Property[Type='2f4f151e-beae-8153-6a78-fdc1ba4eab9c']/UUID$"
-																			},
-																			"Operator": "Like",
-																			"ValueExpressionRight": {
-																				"Value": "%" + options.filter.filters[0].value + "%"
-																			}
-																		}
-																	},
+																	},																	
 																	{
 																		"SimpleExpression": {
 																			"ValueExpressionLeft": {
@@ -133,31 +122,3 @@
 				
 	};
 
-
-/* TODO Add user search
-		{
-										"SimpleExpression": {
-											"ValueExpressionLeft": {
-											"GenericProperty": "DisplayName"
-											},
-											"Operator": "Like",
-											"ValueExpressionRight": {
-											"Value": "%" + options.filter.filters[0].value + "%"
-											}
-										}
-										},
-										{
-										"SimpleExpression": {
-											"ValueExpressionLeft": {
-											"Property": "$Context/Path[Relationship='cbb45424-b0a2-72f0-d535-541941cdf8e1' TypeConstraint='eca3c52a-f273-5cdc-f165-3eb95a2b26cf']/Property[Type='eca3c52a-f273-5cdc-f165-3eb95a2b26cf']/UserName$"
-											},
-											"Operator": "Like",
-											"ValueExpressionRight": {
-											"Value": "%" + options.filter.filters[0].value + "%"
-											}
-										}
-										}
-										
-
-
- ----------------------------------------------- */
