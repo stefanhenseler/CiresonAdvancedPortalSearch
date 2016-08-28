@@ -34,11 +34,6 @@ var loadScript = function (path) {
 
 // End - Advanced Portal Search App
 
-app.custom.formTasks.add('HardwareAsset', "> Open in Nexthink Finder", function (formObj, viewModel) { 
-	
-	var win = window.open("nxt://Show-NxSource?Name=" + hwJson.Name, '_blank'); 	
-	return; 
 
-});
 
 
