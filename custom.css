@@ -1,0 +1,29 @@
+
+    	#searchText-list .k-item > div{
+            border-top: 0.6px;
+            border-bottom: 0.6px;
+            border-left: 0.6px;
+            border-right: 0.6px;
+            border-style: outset;  
+            border-color: dodgerblue;   
+            vertical-align: top;
+            min-height: 105px;
+            width: 100%;
+            padding: 20px;
+ 
+          }         
+
+          
+         #searchText-list h1 {
+            font-size: 1.3em;
+            margin-top: -20px;
+            margin-bottom: -10px;
+        
+          }
+
+    	.selected-value {
+                float: left;
+                width: 20px;
+                margin: 0 4px;
+            }
+
