@@ -33,7 +33,3 @@ var loadScript = function (path) {
 		loadScript("/CustomSpace/custom_InitSearch.js");
 
 // End - Advanced Portal Search App
-
-
-
-

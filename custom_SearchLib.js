@@ -23,7 +23,9 @@
 		// Making sure the kendo autocomplete is removed from the control.
 		disableCustomHeaderSearch: function (searchInput) {
 			//Disable autocomplete
-		     searchInput.data("kendoAutoComplete").destroy();    
+			 searchInput.data("kendoAutoComplete").close();
+		     searchInput.data("kendoAutoComplete").destroy();
+						   
     	},
 
 		// This enables the autocomplete search using the template and the datasource specified
@@ -41,7 +43,7 @@
 				filtering: function (obj) {		
 					// show progress
 					 kendo.ui.progress($(".navbar__search--input"), true);
-				
+								
 				},				
 				dataBound : function (obj) {
 					// hide progress
@@ -86,7 +88,8 @@
 
 					if (!widget.shouldClose && !this.dataSource.view()[0]) {
 						e.preventDefault();
-					}
+					}				
+					
 				},
 				highlightFirst: true,
 				dataSource: dataSource,
@@ -111,6 +114,10 @@
             	searchInput.data("kendoAutoComplete").shouldClose = true;
             	searchInput.data("kendoAutoComplete").close();
            		searchInput.data("kendoAutoComplete").shouldClose = false;
+
+				// Hide no items div if loose focus
+				var noItems = searchInput.find(".noDataMessage");
+				noItems.hide();    
 
           	});
 

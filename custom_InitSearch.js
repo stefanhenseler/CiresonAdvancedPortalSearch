@@ -28,7 +28,7 @@ $(document).ready(function () {
 				var searchType = event.target.hash;
 
 				// If Autocomplete already exists destroy, just do clean everything up... IT Monkey would love it!!
-				if (!searchInput.data("kendoAutoComplete"))	 {					
+				if (searchInput.data("kendoAutoComplete"))	 {					
 						customSearchLib.disableCustomHeaderSearch(searchInput);
 				}
 
